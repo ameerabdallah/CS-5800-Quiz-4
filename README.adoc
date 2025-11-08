@@ -64,8 +64,10 @@ include::src/com/ameerdev/Driver.java[]
 == Output
 ----
 Paypal payment of $100.00 processed for 'ameeryabdallah1@gmail.com'
-Payment of $100.00 going from 'Ameer Abdallah'. Card number: '4242424242424242', EXP: '12/34'
+Stripe Payment of $100.00 going from 'Ameer Abdallah'. Card number: '4242424242424242', EXP: '12/34'
+
+---- After adding Square Adaptor ----
 Paypal payment of $100.00 processed for 'ameeryabdallah1@gmail.com'
-Payment of $100.00 going from 'Ameer Abdallah'. Card number: '4242424242424242', EXP: '12/34'
+Stripe Payment of $100.00 going from 'Ameer Abdallah'. Card number: '4242424242424242', EXP: '12/34'
 Square payment of $100.00 processed for location ID: 'LOC123'
 ----

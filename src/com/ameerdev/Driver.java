@@ -14,6 +14,7 @@ void main() {
         provider.processPayment(amount);
     }
 
+    System.out.println("\n---- After adding Square Adaptor ----");
     // Part 2: Adding Square Adaptor
     providers.add(new SquareAdaptor("LOC123"));
     for (PaymentProvider provider : providers) {
