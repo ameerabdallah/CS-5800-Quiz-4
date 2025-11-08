@@ -19,7 +19,6 @@ public class StripeAdaptor implements PaymentProvider {
 
     @Override
     public void processPayment(double paymentAmount) {
-        StripeGateway stripeGateway = new StripeGateway();
         stripeGateway.executePayment(paymentAmount, this.cardHolderName, this.cardNumber, this.expirationDate);
     }
 }
