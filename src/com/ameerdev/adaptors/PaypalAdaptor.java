@@ -13,8 +13,7 @@ public class PaypalAdaptor implements PaymentProvider {
     }
 
     @Override
-    public void processPayment(double amount) {
-        com.ameerdev.gateways.PaypalGateway paypalGateway = new com.ameerdev.gateways.PaypalGateway();
-        paypalGateway.makePayment(amount, this.email);
+    public void processPayment(double paymentAmount) {
+        paypalGateway.makePayment(paymentAmount, this.email);
     }
 }

@@ -12,8 +12,7 @@ public class SquareAdaptor implements PaymentProvider {
     }
 
     @Override
-    public void processPayment(double amount) {
-        com.ameerdev.gateways.SquareGateway squareGateway = new com.ameerdev.gateways.SquareGateway();
-        squareGateway.processTransaction(amount, this.locationID);
+    public void processPayment(double paymentAmount) {
+        squareGateway.processTransaction(paymentAmount, this.locationID);
     }
 }
