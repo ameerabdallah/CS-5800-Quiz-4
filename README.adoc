@@ -1,0 +1,71 @@
+= Quiz 4 - Adaptor
+
+I used asciidoc to generate this PDF
+
+GitHub Repository: https://github.com/ameerabdallah/CS-5800-Quiz-4
+
+
+:toc:
+
+== Gateways
+
+=== PaypalGateway.java
+[source,java]
+----
+include::src/com/ameerdev/gateways/PaypalGateway.java[]
+----
+
+=== StripeGateway.java
+[source,java]
+----
+include::src/com/ameerdev/gateways/StripeGateway.java[]
+----
+
+=== SquareGateway.java
+[source,java]
+----
+include::src/com/ameerdev/gateways/SquareGateway.java[]
+----
+
+== Adaptor stuff
+
+=== PaymentProvider.java
+[source,java]
+----
+include::src/com/ameerdev/PaymentProvider.java[]
+----
+
+=== PaypalAdaptor.java
+[source,java]
+----
+include::src/com/ameerdev/adaptors/PaypalAdaptor.java[]
+----
+
+=== StripeAdaptor.java
+[source,java]
+----
+include::src/com/ameerdev/adaptors/StripeAdaptor.java[]
+----
+
+=== SquareAdaptor.java
+[source,java]
+----
+include::src/com/ameerdev/adaptors/SquareAdaptor.java[]
+----
+
+== Driver code
+
+=== Driver.java
+[source,java]
+----
+include::src/com/ameerdev/Driver.java[]
+----
+
+== Output
+----
+Paypal payment of $100.00 processed for 'ameeryabdallah1@gmail.com'
+Payment of $100.00 going from 'Ameer Abdallah'. Card number: '4242424242424242', EXP: '12/34'
+Paypal payment of $100.00 processed for 'ameeryabdallah1@gmail.com'
+Payment of $100.00 going from 'Ameer Abdallah'. Card number: '4242424242424242', EXP: '12/34'
+Square payment of $100.00 processed for location ID: 'LOC123'
+----
